@@ -1,0 +1,15 @@
+public class Solution {
+    public void Merge(int[] nums1, int m, int[] nums2, int n) {
+        int len1=m-1;
+        int len2=n-1;
+        int mrglen=m+n-1;
+    List<int> mrglist=new List<int>();
+        int[]   mrgarray=new int[mrglen];
+    mrglist.AddRange(nums1.Cast<int>());
+        mrglist.AddRange(nums2.Cast<int>());
+        mrglist.Sort();
+        mrgarray=mrglist.ToArray();
+        return mrgarray;
+        
+    }
+}
